@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="text.size.normal" tools:ignore="MissingDefaultResource">14sp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp1">1dp</dimen>
+</resources>

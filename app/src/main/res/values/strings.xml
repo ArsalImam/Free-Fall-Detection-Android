@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="duration_lbl">Duration: %s ms</string>
+    <string name="timestamp_lbl">Timestamp: %s ns</string>
+    <string name="date_lbl">Event occurs on %s</string>
+</resources>

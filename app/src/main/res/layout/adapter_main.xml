@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="io.xbird.library.database.entity.FreeFallReading" />
+
+        <variable
+            name="index"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(index + 1)}"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text.size.normal"
+                tools:text="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.format(@string/date_lbl, item.formatedDate)}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text.size.normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@{String.format(@string/duration_lbl, item.duration)}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text.size.normal"
+                    tools:text="1 ms" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="@{String.format(@string/timestamp_lbl, item.timestamp)}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text.size.normal"
+                    tools:text="1 ms" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:alpha="0.5"
+            android:background="@android:color/black" />
+    </LinearLayout>
+</layout>
+
