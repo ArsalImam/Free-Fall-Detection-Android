@@ -75,7 +75,7 @@ Initially, when I received this code challenge (requirements),  first two things
 ### Calculations
 Moreover on the calculations side, I made some analysis and from those analysis, I have found following results,
 acceleration about all 3 axes drops close to zero during free fall. Magnitude of total acceleration is given by 
-![total acceleration](https://raw.githubusercontent.com/ArsalRaza/free-fall-detector-internal/master/readme.assets/formula.jpg)
+![total acceleration](https://raw.githubusercontent.com/ArsalImam/Free-Fall-Detection-Android/master/readme.assets/formula.jpg)
 
 Hence, if acceleration about all the 3 axes are closer to zero than the total acceleration would also be closer to zero. It is the idea behind detecting the free fall. At the end, I have add threshold ranges to find the acceleration.
 
